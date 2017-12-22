@@ -1,0 +1,11 @@
+{
+  "name": "vc-datetime-picker",
+  "version": "0.1.0",
+  "description": "Datetime picker component",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "author": "RebelCode",
+  "license": "ISC"
+}
