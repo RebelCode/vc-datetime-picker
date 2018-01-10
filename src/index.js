@@ -1,13 +1,32 @@
+/**
+ * Datetime picker constructor.
+ * Can accept Date object as input and then utilize any
+ * available library for date and time input.
+ *
+ * @since [*next-version*]
+ *
+ * @param Vue
+ * @return {*}
+ * @constructor
+ */
 export function CfDatetimePicker (Vue) {
     return Vue.extend({
         props: {
             /**
-             * @var {int} Timestamp in milliseconds, passed via v-model
+             * Timestamp in milliseconds, passed via v-model
+             *
+             * @since [*next-version*]
+             *
+             * @var {int}
              */
             value: {},
 
             /**
-             * @var {String}  Locale to use with Date
+             * Locale to use with Date
+             *
+             * @since [*next-version*]
+             *
+             * @var {String}
              */
             locale: {
                 type: String,
@@ -17,7 +36,9 @@ export function CfDatetimePicker (Vue) {
 
         computed: {
             /**
-             * Force consumer to implement getter and setter for timeValue
+             * @since [*next-version*]
+             *
+             * It will force consumer to implement setter for timeValue
              * ONLY if consumer wants to use it.
              */
             timeValue: {
@@ -33,7 +54,9 @@ export function CfDatetimePicker (Vue) {
             },
 
             /**
-             * Force consumer to implement getter and setter for dateValue
+             * @since [*next-version*]
+             *
+             * It will force consumer to implement setter for dateValue
              * ONLY if consumer wants to use it.
              */
             dateValue: {
@@ -49,6 +72,8 @@ export function CfDatetimePicker (Vue) {
             /**
              * Wrapper for timestamp for simpler API
              *
+             * @since [*next-version*]
+             *
              * @return {Date}
              */
             nativeDate () {
@@ -60,6 +85,8 @@ export function CfDatetimePicker (Vue) {
             /**
              * Set current component value (that binded to v-model).
              *
+             * @since [*next-version*]
+             *
              * @param {int} newValue  New value of this component.
              * @private
              */
@@ -69,6 +96,8 @@ export function CfDatetimePicker (Vue) {
 
             /**
              * Get formatted datetime.
+             *
+             * @since [*next-version*]
              *
              * @param {object} options  Format options to format date string (using native toLocaleDateString).
              * @return {string}
