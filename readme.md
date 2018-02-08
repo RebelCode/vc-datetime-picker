@@ -1,4 +1,5 @@
 # Datetime Picker Component
+[![npm (scoped)](https://img.shields.io/npm/v/@rebelcode/vc-datetime-picker.svg)]()
 
 ## Usage
 ```js
